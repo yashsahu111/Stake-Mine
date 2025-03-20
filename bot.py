@@ -7,6 +7,16 @@ from PIL import Image, ImageDraw
 TOKEN = "7290515316:AAEiLwdZ6qu3yZ_GF6MYX9tWBMh5EKm0d3Y"
 bot = telebot.TeleBot(TOKEN)
 
+
+while True:
+    try:
+        bot.infinity_polling()
+    except Exception as e:
+        print(f"Error: {e}")
+
+
+
+
 # 🔹 Grid settings
 GRID_SIZE = 5  # 5x5 grid
 CELL_SIZE = 120  # Each cell is 120x120 pixels
